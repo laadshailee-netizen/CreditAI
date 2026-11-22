@@ -41,6 +41,7 @@ if not st.session_state.login:
         with st.container(border=True):
             st.subheader("Staff Login")
             u = st.text_input("Username"); p = st.text_input("Password", type="password")
+            st.info("Demo login-Username: admin| password:admin123")
             if st.button("Secure Login →"):
                 if u=="admin" and p=="admin123":
                     st.session_state.login=True; st.rerun()
